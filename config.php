@@ -8,6 +8,7 @@ $dotenv = new Dotenv();
 $dotenv->loadEnv(__DIR__."/.env", __DIR__."/.env.local");
 
 // set variable
-$BOT_API_KEY = "";
-$BOT_USERNAME =  "username";
-$HOOK_URL = "https://domain:port/path/tohook.php";
+
+$bot_api_key = $_ENV['BOT_API_KEY'];
+$bot_username = $_ENV['$BOT_USERNAME'];
+$HOOK_URL = $_ENV['HOOK_URL'];
